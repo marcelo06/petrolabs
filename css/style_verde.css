@@ -1,0 +1,207 @@
+/* Aditivos Petrolabs - Marzo 2014 */
+/* html5 fix */
+article, aside, figure, footer, header, hgroup, nav, section{display:block;}
+
+/* Elementos HTML */
+body{margin:0; padding:0; background:url(../images/bodyBg.jpg) bottom center; background-attachment:fixed; background-size:cover; font-family: 'Lato', sans-serif; font-size:14px; color:#666; line-height:18px}
+::-moz-selection{background:#669933; color:#FFF;}
+img{border:none;}
+textarea{resize:none;}
+a{color:#669933; text-decoration:none;}
+a:hover{color:#336666; transition-duration:0.2s}
+h1,h2,h3,h4,h5,h6{margin:0; padding:0; font-weight:normal;}
+hr{border:none; height:1px; background:#CCC;}
+strong{color:#333;}
+
+/* Header */
+#cPageHeader{clear:both; background:#E8EADD url(../images/headerBg.png) top left repeat-x; box-shadow:0 1px 10px #666}
+#pageHeader{width:960px; margin:0 auto;}
+#logo{float:left; margin:17px 0 0 10px}
+#topContact{float:right; text-align:right; color:#808080; font-family: 'Roboto Condensed', sans-serif; font-size:13px; line-height:16px; padding:10px 10px 5px 0}
+#topContact a{font-weight:normal; color:#669933; text-decoration:none; font-size:16px; line-height:26px}
+#topContact a:hover{color:#336666;}
+#topContact img{margin:0 5px 0 0;}
+#pageNav{clear:both; height:44px; background:url(../images/navBg.png) top left repeat-x; line-height:44px;  font-family:'Roboto Condensed', sans-serif; text-transform:uppercase; margin:5px 0 0 0}
+#pageNav ul{float:left; margin:0 0 0 2px; padding:0;}
+#pageNav ul li{margin:0; padding:0; list-style:none; display:inline; padding:10px 14px; font-size:14px; border-right:1px solid #4B7522}
+#pageNav ul li a{color:#E6E6E6;}
+#pageNav ul li a:hover{color:#333; -webkit-transition-duration:0.2s; -moz-transition-duration:0.2s; transition-duration:0.2s;}
+#pageNav ul li.activeMenu{background:#44691E; color:#FFF; cursor:default}
+#pageNav ul li.activeMenu a,
+#pageNav ul li.activeMenu a:hover{color:#FFF; cursor:default}
+#langSelector{float:right; margin:0 10px 0 0; font-size:14px}
+#langSelector a{color:#CCC; margin:0 0 0 6px}
+#langSelector a:hover,
+#langSelector a.currentLang{color:#FFF; -webkit-transition-duration:0.2s; -moz-transition-duration:0.2s; transition-duration:0.2s;}
+#langSelector a.currentLang{cursor:default;}
+.cse .gsc-control-cse, .gsc-control-cse{background:none !important; border:none !important;}
+
+/* Slider */
+#sliderArea{width:960px; height:265px; clear:both; margin:0 auto; background:#E6E6E6; position:relative; overflow:hidden}
+#sliderArea #productsBtn{display:block; float:right; background:#10687F; color:#FFF; font-family:'Roboto Condensed', sans-serif; padding:7px 0 0 20px; text-transform:uppercase; font-size:13px; border-radius:5px; padding:0 18px; line-height:35px; z-index:55; position:absolute; right:8px; bottom:32px}
+#sliderArea #productsBtn:hover{background:#0A3D49;}
+#sliderArea ul{padding:0; margin:0;}
+#sliderArea ul li{padding:0; margin:0; list-style:none;}
+#sliderArea ul li .sTitle{width:960px; height:85px; position:absolute; bottom:25px; left:0; background:url(../images/bg-slider-title.png); overflow:hidden}
+.sTitleContent{width:720px; height:85px; overflow:hidden;}
+#sliderArea ul li .sTitle h2{color:#FFF; font-size:28px; text-transform:uppercase; line-height:40px; font-family:'Roboto Condensed', sans-serif; padding:8px 0 0 20px; text-shadow:1px 1px 2px #000}
+#sliderArea ul li .sTitle h3{color:#FFF; font-size:15px; text-transform:uppercase; line-height:16px; font-family:'Roboto Condensed', sans-serif; padding:0 0 0 20px; text-shadow:1px 1px 2px #000}
+.bx-controls-direction{display:none;}
+.bx-wrapper{margin-top:-10px;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom:28px;}
+
+/* Slider noticias */
+#recentNews{clear:both; height:60px; background:#8EBC00 url(../images/newsBubble.png) top left no-repeat; position:relative;}
+#recentNews #rnHolder{float:left; width:575px; height:60px; margin:0 0 0 65px; line-height:60px; color:#FFF; position:relative; overflow:hidden;}
+#recentNews #rnHolder #sNews{width:575px; height:60px; position:absolute; left:0; top:0; overflow:hidden;}
+#recentNews #rnHolder #sNews .newsTitle{float:left; font-size:16px; width:575px; height:60px; position:relative;}
+#recentNews #rnHolder #sNews .newsTitle a{color:#FFF;}
+#recentNews #rnHolder #sNews .newsTitle a:hover{color:#333; transition-duration:0.3s}
+#recentNews #newsNav{position:absolute; top:20px; right:263px;}
+#recentNews #newsNav a{font-family:"Comic Sans MS", cursive; color:#FFF; width:22px; height:22px; line-height:19px; text-align:center; background:#6A8D00; cursor:pointer; float:left; display:inline-block; border-radius:50%; margin:0 0 0 6px; font-size:16px; font-weight:bold}
+#recentNews #newsNav a:hover{background:#336666;}
+#recentNews #viewAll{float:right; display:block; width:255px; line-height:60px; text-align:center; text-transform:uppercase; color:#FFF; background:#698C00; font-family:'Roboto Condensed', sans-serif; font-size:14px}
+#recentNews #viewAll:hover{background:#336666;}
+.nDisabled{background:url(../images/transparent50black.png) !important; cursor:default !important; color:#666 !important;} 
+
+/* Inicio */
+#homeProducts{clear:both; padding:0 0 25px 0}
+.hProduct{float:left; width:230px; position:relative; cursor:pointer; margin:0 13px 0 0}
+.hProduct .picHolder{width:230px; height:225px; clear:both; text-align:center;}
+.hProduct .picHolder img{width:220px; height:220px;}
+.hProduct h2{text-align:center; text-transform:uppercase; color:#FFF;  font-family: 'Roboto Condensed', sans-serif; font-size:15px; line-height:18px; padding:8px 0}
+.hProdArrow{width:30px; height:30px; border-radius:50%; color:#FFF; font-family:"Comic Sans MS", cursive; text-align:center; line-height:25px; font-size:25px; position:absolute; bottom:-16px; right:35px;border:4px solid #FFF}
+#hProduct1{background:#359698;}
+#hProduct2{background:#C93135;}
+#hProduct3{background:#568551;}
+#hProduct4{background:#17636B;}
+#hProduct1:hover{background:#1B4A4B; transition-duration:0.3s;}
+#hProduct2:hover{background:#8C2225; transition-duration:0.3s;}
+#hProduct3:hover{background:#345131; transition-duration:0.3s;}
+#hProduct4:hover{background:#0F4146; transition-duration:0.3s;}
+
+/* Contenidos */
+#titleArea{height:120px; clear:both; background:url(../images/transparentBlack.png); position:relative}
+#titleArea h1{ font-family:'Roboto Condensed', sans-serif; font-size:36px; line-height:120px; color:#FFF; text-shadow:1px 1px 5px #333; margin-left:30px}
+#titleArea #demoLink{position:absolute; left:225px; top:40px; padding:0 25px; line-height:45px; text-align:center; text-transform:uppercase; color:#FFF; background:#0A3D49; font-family:'Roboto Condensed', sans-serif; font-size:14px; display:block; float:right; border-radius:5px; box-shadow:1px 1px 5px #333}
+#titleArea #demoLink:hover{background:#10687F;}
+#breadCrumbs{clear:both; height:60px; background:#8EBC00; letter-spacing:0.03em}
+#breadCrumbs #breadNav{float:left; width:622px; margin:0 0 0 30px; line-height:60px; color:#FFF; font-family:'Roboto Condensed', sans-serif; font-size:14px; text-transform:uppercase; overflow:hidden}
+#breadCrumbs #breadNav a{color:#FFF;}
+#breadCrumbs #breadNav a:hover{text-decoration:underline;}
+#breadCrumbs #breadContact{float:right; display:block; width:265px; line-height:60px; text-align:center; text-transform:uppercase; color:#FFF; background:#698C00; font-family:'Roboto Condensed', sans-serif; font-size:14px}
+#breadCrumbs #breadContact:hover{background:#336666;}
+.iconSubtitle{color:#333; font-size:22px; font-family:'Roboto Condensed', sans-serif; line-height:40px; border-bottom:1px solid #E6E6E6; margin:20px 0}
+.iconSubtitle i,
+.ncDate i{color:#8EBC00;}
+.galleryPic{padding:3px; border:1px solid #E6E6E6; box-shadow:0 0 3px #666; margin:8px 14px; background:#FFF}
+.galleryPic:hover{background:#8EBC00;}
+.ui-accordion .ui-accordion-header{color:#666; background:#F0F0F0; font-size:15px; line-height:20px; border-color:#E6E6E6; margin:8px 0 0 0}
+.ui-accordion .ui-accordion-header:hover{background:#8EBC00; color:#FFF}
+.ui-accordion .ui-accordion-content{border-color:#E6E6E6; padding:10px 15px 20px}
+
+/* Noticias y Eventos */
+.newsItem{float:left; width:465px; height:370px; border-bottom:1px solid #CCC; margin:0 30px 20px 0}
+.newsItem .niHPic{width:465px; height:200px; overflow:hidden}
+.newsItem h2{font-family:'Roboto Condensed', sans-serif; font-size:18px; text-transform:uppercase; text-align:center; line-height:22px; margin:10px 0 0 0}
+.newsItem h2 a{color:#333;}
+.newsItem h2 a:hover,
+.testiTitle h2 a:hover{transition-duration:0.3s; color:#669933}
+.newsItem .hiDate{color:#A3A2A2; line-height:22px; text-transform:uppercase; font-size:12px}
+.hiMore{float:right; clear:both; letter-spacing:0.03em; text-transform:uppercase; font-family:'Roboto Condensed', sans-serif; }
+.newsContent h1{font-family:'Roboto Condensed', sans-serif; font-size:32px; text-transform:uppercase; line-height:40px; margin:0; color:#333}
+.ncDate{color:#A3A2A2; line-height:22px; text-transform:uppercase; font-size:14px}
+
+/* Testimonios */
+.testiTitle{border-top:2px solid #EAEDF2; text-align:center; padding:16px 0 0 0; position:relative}
+.testiTitle i{background:#FFF; color:#8EBC00; display:block; font-size:32px; height:40px; left:50%; line-height:40px; margin-left:-50px; position:absolute; top:-20px; width:100px;}
+.testiTitle h2{margin:5px 0 0 0; text-transform:uppercase; font-family:'Roboto Condensed', sans-serif; font-size:20px}
+.testiTitle h2 a{color:#333;}
+.testiContent{border-bottom:1px solid #EAEDF2; padding:0 0 10px 0; margin:10px 0 55px 0}
+.testiContent a{float:right; clear:both; margin:10px 0 0 0;}
+
+/* Productos */
+.prodItem{float:left; width:200px; height:240px; margin:0 40px 20px 0}
+.prodItem .prodPic{background:#FFF; text-align:center; border:1px solid #CCC; width:198px; padding:14px 0 0 0; cursor:pointer; overflow:hidden; border-radius:3px}
+.prodItem .prodPic:hover{box-shadow:0 0 10px #8EBC00;}
+.prodItem .prodName{display:block; text-align:center; line-height:40px; font-family:'Roboto Condensed', sans-serif; font-size:14px; text-transform:uppercase}
+.prodItem .prodName a{color:#333;}
+.prodItem .prodName a:hover{color:#44691E;}
+#fullProdPic{float:left; width:360px;}
+.firstPhoto{width:300px; height:300px; background:#FFF; border:1px solid #CCC; padding:4px; border:1px solid #CCC; background:#FFF}
+.firstPhoto img{display:none; width:300px }
+.pagePhotos a,
+.firstPhoto a{text-decoration:none;}
+.pagePhotos{clear:both; margin:5px 0 20px 0; width:300px; padding:0; padding:0 0 0 2px; display:none}
+.pagePhotos img{width:65px; float:left; border:1px solid #CCC; cursor:pointer; margin:0 2px; padding:2px; background:#FFF}
+.pagePhotos img:hover{border-color:#8EBC00;}
+#fullProdOverview{float:left; width:520px;}
+#fullProdOverview h1{ font-family:'Roboto Condensed', sans-serif; font-size:28px; line-height:40px; color:#000; text-transform:uppercase;}
+#fullProdOverview span{color:#669933;}
+#fullProdOverview p{line-height:20px;}
+#fullProdOverview .pIndustry{color:#FFF; background:#10687F; border-radius:3px; padding:8px 15px; margin:30px 0 20px 0; clear:both}
+#fullProdOverview .pLinkMore{border-top:4px double #E8E8E8; margin:20px 0 0 0; padding:10px 15px; clear:both} 
+#productPage .ui-widget-content{border:none; font-family: 'Lato', sans-serif; font-size:14px; color:#666; line-height:18px;}
+#productPage .ui-tabs .ui-tabs-panel{border:1px solid #E6E6E6; border-radius:3px}
+#productPage .ui-widget-header{border:none; background:none;}
+#productPage .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{border-color:#E6E6E6; border-top-color:#8EBC00; border-top-width:3px}
+#productPage .ui-tabs .ui-tabs-nav li{border-radius:3px;}
+
+/* Videos */
+#videosPage .videoContainer{float:left; margin:15px 20px 30px}
+
+/* contacto */
+#pageContact input[type="text"],
+#pageContact textarea{border: 1px solid #E6E6E6; border-radius: 2px;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset; font-family: 'Lato', sans-serif; font-size:14px; height: 33px; padding: 0 5px; width:500px;}
+#pageContact textarea{height:auto;}
+#pageContact input[type="text"]:focus,
+#pageContact textarea:focus{border-color:#CCC; box-shadow: 0 0 2px #8EBC00 inset; transition-duration:0.2s} 
+#pageContact th{color:#333; font-weight:normal;}
+#pageContact input[type="submit"]{background:#10687F; color:#FFF; font-family:'Roboto Condensed', sans-serif; padding:10px 30px; text-transform:uppercase; font-size:14px; border-radius:5px; border:none; cursor:pointer; letter-spacing:0.02em}
+#pageContact input[type="submit"]:hover{background:#0A3D49; transition-duration:0.2s}
+
+/* Sidebar */
+.contentWithSidebar{float:left; width:675px;}
+aside{width:255px; float:right; overflow:hidden}
+aside h3{color:#333; font-size:18px; font-family:'Roboto Condensed', sans-serif; line-height:32px; border-bottom:1px solid #E6E6E6; margin:20px 0 10px 0}
+.sideNews{clear:both; border-bottom:1px solid #E6E6E6; padding:10px 0}
+.sideNews h4 a{color:#333;}
+.sideNews h4 a:hover{color:#336666; transition-duration:0.2s}
+.sideNews span{color:#A3A2A2; font-size:12px;}
+
+/* Editor de texto */
+.editorText p{margin:0 0 15px 0; padding:0; line-height:18px;}
+.editorText h2{color:#333; font-size:22px; line-height:28px; font-family:'Roboto Condensed', sans-serif; margin:0 0 10px 0}
+.editorText h3{color:#669933; font-size:18px; line-height:24px; font-family:'Roboto Condensed', sans-serif; margin:0 0 10px 0}
+.editorText table{padding:0; margin:0;}
+.editorText table th{text-align:left; padding:5px 10px; background:#698C00; color:#FFF}
+.editorText table td{text-align:left; padding:5px 10px; border-bottom:1px solid #E6E6E6}
+.editorText table td.grayTd{background:#F0F0F0;}
+.editorText li{margin-bottom:10px;}
+
+/* Footer */
+#pageFooter{background:url(../images/footerBg.png) top left repeat-x; height:30px; line-height:30px; clear:both; margin:0 0 10px 0}
+#FLocationPin{background:url(../images/locationPin.png) top left no-repeat; padding:0 0 0 20px; line-height:30px; text-transform:uppercase; font-size:13px;  font-family:'Roboto Condensed', sans-serif; width:400px; float:left}
+#FLocationPin strong{color:#333; font-weight:normal;}
+#fCalendar{float:right; background:url(../images/footerCalendar.png) top left no-repeat; padding:0 0 0 20px; text-transform:uppercase; font-size:13px; font-family:'Roboto Condensed', sans-serif;}
+#credits{font-size:12px; color:#FFF; text-shadow:1px 1px 1px #333}
+#credits a{color:#FFF;}
+
+/* Estilos del calendario de noticias y eventos */
+#datepicker .highlight a{color:#009900; font-weight:bold;}
+.ui-widget{font-size:11px;}
+
+/* Estilos globales */
+.whiteBg{background:#FFF; clear:both;}
+.centerContent{margin:0 auto; width:960px}
+.shadow{background:url(../images/shadow.png); width:960px; height:24px; clear:both;}
+.clear{clear:both;}
+.clear10{clear:both; height:10px}
+.clear20{clear:both; height:20px}
+.clear50{clear:both; height:50px}
+.fLeft{float:left;}
+.fRight{float:right;}
+.noBorder{border:none !important;}
+.noMargin{margin:0 !important;}
+.noMarginR{margin-right:0 !important;}
+.req{color:#C00; font-weight:bold}
