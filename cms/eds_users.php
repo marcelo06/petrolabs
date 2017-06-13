@@ -449,7 +449,12 @@ else
 					<?php for ($i=0; $i < $numRows; $i++) :?>
 						 	<?$col = $db->getFieldName($ventas_col, $i+3) ?> 	
 						<?php $p = "SUM(`".$col."`)"; ?>
-						 <td><?= $v =$row["$p"] ?></td>
+						 <?php $v =$row["$p"] ?>
+						 <?php if ($v==NULL): ?>
+						 	<td>0</td>
+						 <?php else: ?>
+						 	<td><?= $v ?></td>
+						 <?php endif ?>
 					<?php endfor ?>
 					</tr>
 

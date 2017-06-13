@@ -479,7 +479,7 @@ include("header.php"); ?>
 							<?php if ($val1==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(180/$val1) ?>
+								<?=  ceil($val1/180) ?>
 							<?php endif ?>
 					
 						</td>
@@ -488,7 +488,7 @@ include("header.php"); ?>
 							<?php if ($val1==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(90/$val1) ?>
+								<?=  ceil($val1/90) ?>
 							<?php endif ?>
 					
 						</td>
@@ -501,7 +501,7 @@ include("header.php"); ?>
 							<?php if ($val2==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(180/$val2) ?>
+								<?=  ceil($val2/180) ?>
 							<?php endif ?>
 					
 						</td>
@@ -510,7 +510,7 @@ include("header.php"); ?>
 							<?php if ($val2==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(90/$val2) ?>
+								<?=  ceil($val2/90) ?>
 							<?php endif ?>
 					
 						</td>
@@ -523,7 +523,7 @@ include("header.php"); ?>
 							<?php if ($val3==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(180/$val3) ?>
+								<?=  ceil($val3/180) ?>
 							<?php endif ?>
 					
 						</td>
@@ -532,7 +532,7 @@ include("header.php"); ?>
 							<?php if ($val3==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(90/$val3) ?>
+								<?=  ceil($val3/90) ?>
 							<?php endif ?>
 					
 						</td>
@@ -545,7 +545,7 @@ include("header.php"); ?>
 							<?php if ($val4==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(180/$val4) ?>
+								<?=  ceil($val4/180) ?>
 							<?php endif ?>
 					
 						</td>
@@ -554,7 +554,7 @@ include("header.php"); ?>
 							<?php if ($val4==0): ?>
 								0
 							<?php else: ?>
-								<?=  ceil(90/$val4) ?>
+								<?=  ceil($val4/90) ?>
 							<?php endif ?>
 					
 						</td>

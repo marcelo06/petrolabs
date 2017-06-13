@@ -178,7 +178,12 @@
 										 <tr>
 										 	<th><?=$col = $db->getFieldName($ventas_col, $i+3) ?></th>
 												<?php $p = "SUM(`".$col."`)"; ?>
-										 	<td><?= $v =$row["$p"] ?></td>
+												 <?php $v =$row["$p"] ?>
+												 <?php if ($v==NULL): ?>
+												 	<td>0</td>
+												 <?php else: ?>
+												 	<td><?= $v ?></td>
+												 <?php endif ?>
 										 	<?$_SESSION[$col]=$v;?>
 										 </tr>
 									<?php endfor ?>
