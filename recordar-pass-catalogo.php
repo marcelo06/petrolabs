@@ -124,7 +124,7 @@ include("lib/class.phpmailer.php"); ?>
 						$exito = $mail->Send();
 						$intentos ++;
 					}
-					
+
 					if(!$exito)
 					{
 						

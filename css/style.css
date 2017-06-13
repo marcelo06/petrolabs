@@ -141,7 +141,7 @@ strong{color:#000;}
 .testiContent a{float:right; clear:both; margin:10px 0 0 0;}
 
 /* Productos */
-.prodItem{float:left; width:200px; height:240px; margin:0 40px 20px 0}
+.prodItem{float:left; width:200px; height:250px; margin:0 40px 20px 0; overflow:hidden}
 .prodItem .prodPic{background:#FFF center center no-repeat; background-size:cover; text-align:center; border:4px solid #51a8b1; width:170px; height:170px; padding:10px; cursor:pointer; overflow:hidden; border-radius:4px}
 .prodItem .prodPic:hover{box-shadow:0 0 10px #FFCC29;}
 .prodItem .prodName{display:block; text-align:center; line-height:40px; font-family:'Roboto Condensed', sans-serif; font-size:14px; text-transform:uppercase}
@@ -194,22 +194,26 @@ strong{color:#000;}
 
 /* contacto */
 .pageContact input[type="text"],
+.pageContact input[type="email"],
 .pageContact select,
 .pageContact textarea,
 .iLogin input[type="text"],
-input[type="password"],
-input[type="email"]{border: 1px solid #E6E6E6; border-radius: 2px;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset; font-family: 'Lato', sans-serif; font-size:14px; height: 33px; padding: 0 5px; width:500px;}
+.iLogin input[type="email"],
+input[type="password"]{border: 1px solid #E6E6E6; border-radius: 2px;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset; font-family: 'Lato', sans-serif; font-size:14px; height: 33px; padding: 0 5px; width:500px;}
 .pageContact textarea{height:auto;}
 .pageContact input[type="text"]:focus,
+.pageContact input[type="email"]:focus,
 .pageContact select:focus,
 .pageContact textarea:focus,
 .iLogin input[type="text"]:focus,
+.iLogin input[type="email"]:focus,
 input[type="password"]:focus{border-color:#CCC; box-shadow: 0 0 2px #51A8B1 inset; transition-duration:0.2s}
 .pageContact th{color:#333; font-weight:normal; min-width:100px}
 .pageContact input[type="submit"],
 .iLogin input[type="submit"]{background:#10687F; color:#FFF; font-family:'Roboto Condensed', sans-serif; padding:10px 30px; text-transform:uppercase; font-size:14px; border-radius:5px; border:none; cursor:pointer; letter-spacing:0.02em}
 .pageContact input[type="submit"]:hover,
 .iLogin input[type="submit"]:hover{background:#0A3D49; transition-duration:0.2s}
+.mapDiv{ width: 960px; height: 250px}
 
 /* Sidebar */
 .contentWithSidebar{float:left; width:675px;}
@@ -229,8 +233,8 @@ aside h3{color:#333; font-size:18px; font-family:'Roboto Condensed', sans-serif;
 .iLogin{width:400px; margin:0 auto; background:#FFF; padding:20px}
 .iLogin label{display:block;}
 .iLogin input[type="text"],
-input[type="password"],
-input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
+.iLogin input[type="email"],
+input[type="password"]{display:block; width:100%; margin:5px 0 10px 0}
 .cAcLink{text-transform:none; margin:0 0 0 12px; color:#000 !important; padding:5px 12px; border-radius:3px; transition:0.3s ease; background:rgba(255,255,255,0.4)}
 .cAcLink:hover{background:rgba(255,255,255,0.2); text-decoration:none !important}
 .tablaBalance{width:100%; background:#FFF}
@@ -278,6 +282,7 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 .mobileContainer .whiteBg{padding:5px 15px 10px 15px; box-sizing:border-box; max-width:420px; margin:0 auto}
 .mobileContainer .contactTable{padding:20px 0 0 0;}
 .mobileContainer .pageContact input[type="text"],
+.mobileContainer .pageContact input[type="email"],
 .mobileContainer .pageContact select, .pageContact textarea{width:97%;}
 
 
@@ -297,7 +302,9 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 .req{color:#C00; font-weight:bold}
 .menu_button{display:none;}
 .phoneMenu{display:none;}
-
+.phoneCategories, .cPhoneCatMenu{display:none;}
+.showPhone{display:none !important;}
+.hidePhone{display:block;}
 
 /* Tablet: Portrait */
 @media only screen and (min-width:768px) and (max-width:1023px){
@@ -309,10 +316,10 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	.prodBadge{display:none;}
     #pageNav{margin: 0;}
     #pageNav ul{margin:0}
-    #pageNav ul li{font-size: 12px;padding: 10px;}    
+    #pageNav ul li{font-size: 12px;padding: 10px;}
     #sliderArea ul li .sTitle{width: 100%}
     .sTitleContent{width: auto}
-    #productsBtn{display: none}	
+    #productsBtn{display: none}
 	.centerContent{width:100%;}
 	.shadow{display:none;}
 	#sliderArea{width:100%;}
@@ -332,7 +339,7 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	.newsItem{margin:0; width:50%;border: none;padding: 0px 24px 20px 24px;}
 	.newsItem .niHPic{width:100%; height:auto;}
 	.niSummary{display:none;}
-	.contentWithSidebar img{max-width:100%;}	
+	.contentWithSidebar img{max-width:100%;}
 	.pIntroText{padding:0 12px;}
 	.prodItem{margin:10px;}
 	#fullProdPic{margin:0 auto; float:none; clear:both}
@@ -341,7 +348,9 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	#fullProdOverview .pIndustry{margin-top:12px;}
 	#productPage .ui-widget-content{padding:0 10px;}
 	.pageContact th{min-width:80px;}
-	.pageContact input[type="text"], .pageContact select, .pageContact textarea{width:100%;}
+	.pageContact input[type="text"],
+	.pageContact input[type="email"],
+	.pageContact select, .pageContact textarea{width:100%;}
 	#fb-root{max-width:400px;}
 	.hideOnMovil{display:none;}
 	.mapContainer{width:100%;}
@@ -349,6 +358,9 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	#pageFooter{height:auto;}
 	.menu_button{display:none;}
 	.phoneMenu{display:none;}
+	.phoneCategories, .cPhoneCatMenu{display:none;}
+	.showPhone{display:none;}
+	.hidePhone{display:block;}
 }
 
 /* Celulares */
@@ -362,12 +374,12 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	.prodBadge,
 	#sliderArea,
 	.shadow{display:none;}
-	#cPageHeader{box-shadow:none;}	
+	#cPageHeader{box-shadow:none;}
 	#recentNews #rnHolder{display:none;}
 	#recentNews #viewAll{float:none; width:100%}
 	#recentNews #newsNav,
 	#recentNews #rnHolder{display:none;}
-	#recentNews{margin-bottom:30px;}	
+	#recentNews{margin-bottom:30px;}
 	.centerContent{width:100%; padding:0;}
 	#homeProducts{padding:0;}
 	.hProduct .picHolder{width:100%; height:320px; margin:0}
@@ -375,7 +387,7 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	#homeProducts{padding:0 30px; box-sizing:border-box;}
 	.hProduct{margin-bottom:30px;}
 	#pageFooter{padding:20px 20px 0 20px;}
-	#credits{padding:5px 20px 10px 20px; box-sizing:border-box;}	
+	#credits{padding:5px 20px 10px 20px; box-sizing:border-box;}
 	#pageFooter{display:none;}
 	#home{padding-bottom:40px;}
 	.fLeft,
@@ -386,17 +398,70 @@ input[type="email"]{display:block; width:100%; margin:5px 0 10px 0}
 	.menu_button.active .line{opacity:0;}
 	.menu_button.active .line.first{opacity:1; transform:translateY(15px) rotate(45deg);}
 	.menu_button.active .line.last{opacity:1; transform:translateY(-10px) rotate(-45deg);}
-	.phoneMenu{width:100%; box-sizing:border-box; background:#FFF; position:absolute; left:0; top:0; padding:24px 0; display:none; z-index:3}
+	.phoneMenu{width:100%; box-sizing:border-box; background:#FFF; position:absolute; left:0; top:0; padding:24px 0; display:none; z-index:3; box-shadow:0 0 5px #000}
 	.phoneMenu ul{padding:0; margin:0; list-style:none;}
 	.phoneMenu ul li{padding:15px; text-transform:uppercase; display:block}
 	.phoneMenu ul li a{font-size:16px; color:#666;}
-	#titleArea{height:70px;}
-	#titleArea h1{line-height:70px; font-size:24px;}
+	#titleArea{height:auto; padding:20px}
+	#titleArea h1{font-size:24px; line-height:normal}
 	#breadCrumbs{display:none;}
 	.contentWithSidebar{width:100% !important; float:none; clear:both; padding:0 20px}
 	aside{width:100%; padding:0 20px; float:none; clear:both;}
 	#credits .fLeft,
 	#credits .fRight{text-align:center;}
-	.contentWithSidebar img{max-width:100%;}	
-	.pIntroText{padding:0 12px;}	
+	.contentWithSidebar img{max-width:100%;}
+	.pIntroText{padding:0 12px;}
+	.testiTitle{margin:12px 0 0 0;}
+	#titleArea #demoLink{position: relative;top: auto;left: auto;float: none;border-radius: 0;padding: 0;}
+	#productList{padding-top:48px;}
+	.prodItem{margin:0; width:50%; text-align:center;  padding:0 12px}
+	.prodItem .prodPic{width:100%;}
+	.prodItem .prodName{line-height:normal; padding-top:10px;}
+	#fullProdPic{margin:0 auto; float:none; clear:both; width:100%; padding:0 10px;}
+	#fullProdOverview{float:none; clear:both; padding:0 20px; width:100%;}
+	#fullProdOverview h1{text-align:center; line-height:32px; margin-top:12px}
+	#fullProdOverview .pIndustry{margin-top:0px;}
+	#productPage .ui-widget-content{padding:0 10px;}
+	.firstPhoto{margin:0 auto;}
+	.pagePhotos{margin:10px auto;}
+	.cdCategories{display:none;}
+	.phoneCategories{display:none; width:100%; box-sizing:border-box; background:#FFF; box-shadow:0 4px 5px #666}
+	.phoneCategories ul{padding:0; margin:0; list-style:none;}
+	.phoneCategories a{display:block; padding:16px; color:#000; font-size:13px; border-bottom:1px solid rgba(255,255,255,0.5)}
+	.phoneCategories ul li a{text-transform:uppercase; background:#ffcc29; font-family:'Roboto Condensed', sans-serif}
+	.phoneCategories ul li ul{display:none;}
+	.phoneCategories ul li ul li a{text-transform:none; background:none; border-bottom:1px solid #CCC; font-size:14px}
+	.cPhoneCatMenu{display:block;}
+	.menu_buttonCat{width:36px; position:absolute; right:15px; top:15px; display:inline-block; cursor:pointer; z-index:4}
+	.menu_buttonCat .line{ width:100%; height:3px; background:#000; margin:0 0 9px; transition:0.3s ease;}
+	.menu_buttonCat .line.last{margin:0;}
+	.menu_buttonCat.active .line{opacity:0;}
+	.menu_buttonCat.active .line.first{opacity:1; transform:translateY(15px) rotate(45deg); background:#FFF}
+	.menu_buttonCat.active .line.last{opacity:1; transform:translateY(-10px) rotate(-45deg); background:#FFF}
+	.labelMenu{padding:0 16px; height:60px; line-height:60px; color:#000; font-size:16px; border-bottom:1px solid rgba(255,255,255,0.5); text-transform:uppercase; background:#ffcc29; font-family:'Roboto Condensed', sans-serif}
+	.labelMenu.active{background:#333; color:#FFF;}
+	.bgCatalogo #productList{padding:0 10px;}
+	.bgCatalogo #productList .prodItem{margin:0;}
+	.prodItem .prodPic{height:120px;}
+	.prodItem .prodName{margin-top:0 !important;}
+	.showPhone{display:block !important;}
+	.hidePhone{display:none !important;}
+	.catDetallePage{padding-top:30px;}
+	.catTodosMovil{margin-top:12px;}
+	.prod-ficha{width:100% !important;}
+	.catDeseosPage #breadCrumbs{display:block; padding:20px; height:auto}
+	#breadCrumbs #breadNav{float:none; clear:both; width:100%; margin:0; line-height:normal; text-align:center}
+	#breadCrumbs #breadContact{float:none; clear:both; width:100%; margin:10px 0 0 0; line-height:48px; background:rgba(255,255,255,0.4)}
+	.iLogin{ width: 100%}
+	.pager{ text-align: center;}
+	.pager .fLeft{ padding: 0 0 10px 0}
+	.pitempagediv{ height: 200px}
+	.pitempagediv .prodPic{ height: 140px}
+	.pageContact input[type="text"],
+	.pageContact input[type="email"],
+	.pageContact select, .pageContact textarea{width:100%;}
+	#pageContact{ padding-top: 20px}
+	.mapDiv{ width: 100%}
+	.mapContainer{ width: 100%; }
+	.mapContainer iframe{ width: 100% !important}
 }

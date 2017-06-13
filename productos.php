@@ -69,7 +69,7 @@ include("header.php"); ?>
 <script type="text/javascript">
 	$(document).ready(function(e) {
 		$('.prodPic').click(function(){
-			$(location).attr('href', $(this).attr('data-url'));		
+			$(location).attr('href', $(this).attr('data-url'));
 		});
 	});
 </script>
@@ -82,27 +82,27 @@ include("header.php"); ?>
 		<div id="breadCrumbs">
 			<div id="breadNav"><a href="index.php"><?= INICIO ?></a> &raquo; <?= $pageTitle;?></div>
 			<a href="contactenos.php" id="breadContact"><?= CONTACTO_MAS_INFO ?></a>
-		</div>		
+		</div>
 		<div class="shadow"></div>
 		<div class="clear"></div>
-			<div id="productList">			
+			<div id="productList">
 				<div class="clear20"></div>
 				<div class="testiTitle">
 					<i class="fa fa-check-circle"></i>
-					<h2><?= NUESTROS_PRODUCTOS ?></h2>			
+					<h2><?= NUESTROS_PRODUCTOS ?></h2>
 				</div>
 				<div class="clear20"></div>
 				<p class="pIntroText"><?= TXT_PRODUCTOS ?></p>
 				<div class="clear20"></div><?
 					for($i=0; $i<$numRows; $i++)
 					{ ?>
-						<div class="prodItem">
+						<div class="prodItem pitempagediv">
 							<div class="prodPic" data-url="<?= $module['archivo'].'-single.php?id='.$info[$i]['id']; ?>" style="background-image:url(<?= 'uploads/news/'.$info[$i]['id'].'/'.$imgFile[$i][2] ?>)"></div>
 							<div class="prodName"><a href="<?= $module['archivo'].'-single.php?id='.$info[$i]['id']; ?>"><?= $info[$i]['title']; ?></a></div>
 						</div><?
 					} ?>
 					<div class="clear50"></div><?
-					
+
 			if($pag=pager($totalRows, $module['paginador'], $offset))  // Si es necesario paginar
 			{
 				$varDate = isset($_GET['date']) ? "date=$_GET[date]&amp;" : '';  // Viene del calendario o no.
@@ -122,10 +122,10 @@ include("header.php"); ?>
 						<?= $next; ?>
 					</div>
 					<br>
-				</div> 
+				</div>
 			</div><?
 		}?>
 	</section>
-	<div class="clear50"></div>		
+	<div class="clear50"></div>
 </div>
 <? include("footer.php"); ?>

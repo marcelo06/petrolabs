@@ -1,0 +1,4 @@
+SetEnv LC_ALL es_ES.UTF-8
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .php

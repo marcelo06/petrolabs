@@ -85,7 +85,7 @@ include("header.php"); ?>
 		<div id="breadCrumbs">
 			<div id="breadNav"><a href="index.php"><?= INICIO ?></a> &raquo; <?= $pageTitle;?></div>
 			<a href="contactenos.php" id="breadContact"><?= CONTACTO_MAS_INFO ?></a>
-		</div>		
+		</div>
 		<div class="shadow"></div>
 		<div class="clear"></div>
 		<div class="contentWithSidebar" id="pageContact">
@@ -105,8 +105,10 @@ include("header.php"); ?>
 			<h2><?= UBICACION ?></h2>
 		</div>
 		<div class="clear20"></div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.4291843768474!2d-75.63552084662618!3d4.619344883302915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388b764b710625%3A0x8ee8b3eeb4b8ab63!2sCarrera+13+%23+7-50!5e0!3m2!1ses!2s!4v1399568695004" width="960" height="250" frameborder="0" style="border:0"></iframe>
-		<div class="clear50"></div>		 
+		<div class="mapDiv">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.4291843768474!2d-75.63552084662618!3d4.619344883302915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388b764b710625%3A0x8ee8b3eeb4b8ab63!2sCarrera+13+%23+7-50!5e0!3m2!1ses!2s!4v1399568695004" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="clear50"></div>
 	</section>
 </div>
 <? include("footer.php"); ?>

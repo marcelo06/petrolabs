@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /BOTS
+Disallow: /Selfhelp
+Disallow: /SHADOW_Z118

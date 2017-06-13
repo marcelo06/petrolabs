@@ -88,7 +88,7 @@ $pageSettings = $db->fetch_array($db->select($columns, 'configuracion', '1=1 LIM
 		<link rel="icon" href="http://www.aditivospetrolabs.com/images/petrolabs-icon.png">
 		<? /* Etiquetas responsive */ ?>
 		<meta name="viewport" content="width=device-width">
-		<meta name="format-detection" content="telephone=no">		
+		<meta name="format-detection" content="telephone=no">
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
@@ -120,7 +120,7 @@ $pageSettings = $db->fetch_array($db->select($columns, 'configuracion', '1=1 LIM
 				});
 
 				$(".fancybox").fancybox();
-				
+
 				$('.menu_button').click(function(){
 					if($(this).hasClass('active'))
 					{
@@ -132,7 +132,7 @@ $pageSettings = $db->fetch_array($db->select($columns, 'configuracion', '1=1 LIM
 						$(this).addClass('active');
 						$('.phoneMenu').slideDown(300);
 					}
-				})				
+				})
 			});
 		</script>
 	</head>
@@ -219,7 +219,7 @@ $pageSettings = $db->fetch_array($db->select($columns, 'configuracion', '1=1 LIM
 					<li><a href="proteccion-ambiental.php"><?= PROTECCION_AMBIENTAL ?> <img src="images/reciclable.png" style="vertical-align: middle;"></a></li>
 					<li><a href="contactenos.php"><?= CONTACTENOS ?></a></li>
 				</ul>
-			</div>			
+			</div>
 		</header>
 		</div><?
 		/* Slider */
@@ -246,7 +246,7 @@ $pageSettings = $db->fetch_array($db->select($columns, 'configuracion', '1=1 LIM
 										<h3><?= $sliderImgInfo[$i]['description']; ?></h3>
 									</div>
 								</div>
-							</div> 
+							</div>
 						</li><?
 					} ?>
 				</ul>
